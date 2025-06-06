@@ -1,4 +1,4 @@
 flask
-flask
 jsonify
 flask-sqlalchemy
+gunicorn
