@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2 class="text-2xl font-bold mb-4">Welcome, {{ user.username }}</h2>
+<div class="bg-white p-6 rounded shadow-md">
+    <p><strong>Email:</strong> {{ user.email }}</p>
+    <p><strong>Coins:</strong> {{ user.coins }}</p>
+    <a href="{{ url_for('place_order') }}" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded">Place Order</a>
+</div>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2 class="text-xl font-bold mb-4">Place Order</h2>
+<form method="POST" class="bg-white p-6 rounded shadow-md space-y-4">
+    <input name="service" type="text" placeholder="Service Name" required class="w-full p-2 border rounded" />
+    <input name="link" type="url" placeholder="Paste Your Link Here" required class="w-full p-2 border rounded" />
+    <input name="quantity" type="number" min="10" placeholder="Quantity" required class="w-full p-2 border rounded" />
+    <button type="submit" class="w-full bg-green-600 text-white py-2 rounded">Place Order</button>
+</form>
+{% endblock %}
